@@ -20,7 +20,7 @@ body {
   .map{
     /* position: relative; */
   }
-  .button {
+  .click-bom {
     position: absolute;
     border: none;
     width: 100px;
