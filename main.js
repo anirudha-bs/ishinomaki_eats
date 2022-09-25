@@ -1,11 +1,12 @@
-const buttonOpen = document.getElementById('modalOpen');
+const buttonOpen = document.getElementById('clickBom');
 const modal = document.getElementById('easyModal');
 const buttonClose = document.getElementsByClassName('modalClose')[0];
 
 // ボタンがクリックされた時
-buttonOpen.addEventListener('click', modalOpen);
-function modalOpen() {
+buttonOpen.addEventListener('click', clickBom);
+function clickBom() {
   modal.style.display = 'block';
+  document.getElementById('btn_audio').play(); 
 }
 
 // バツ印がクリックされた時
@@ -21,3 +22,9 @@ function outsideClose(e) {
     modal.style.display = 'none';
   }
 }
+
+function displayEff() {
+  document.getElementById('display').style.display = 'none';
+  console.log('ok')
+}
+displayEff()
